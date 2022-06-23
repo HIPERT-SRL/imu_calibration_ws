@@ -1,0 +1,6 @@
+[submodule "src/imu_code_utils"]
+	path = src/imu_code_utils
+	url = git@github.com:HIPERT-SRL/imu_code_utils.git
+[submodule "src/imu_utils"]
+	path = src/imu_utils
+	url = git@github.com:HIPERT-SRL/imu_utils.git

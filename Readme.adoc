@@ -1,0 +1,22 @@
+= Imu Calibration Workspace
+A ROS package tool to analyze the IMU performance.
+
+== Dependency
+Install dependency:
+[source,sh]
+----
+sudo apt install libdw-dev
+----
+
+== Build
+[source,sh]
+----
+catkin_make
+----
+
+== Run
+[source,sh]
+----
+source devel/setup.bash
+roslaunch imu_calibration_description calibrate.launch [data_save_path:=[...] imu_topic:=[...] imu_name:=[...] max_time_min:=[...]]
+----

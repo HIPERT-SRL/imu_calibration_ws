@@ -1,0 +1,15 @@
+<launch>
+    <arg name="imu_topic" default="/imu" />
+    <arg name="imu_name" default="imu" />
+    <arg name="data_save_path" default="$(find imu_calibration_description)/result/" />
+    <arg name="max_time_min" default="1" />
+    <arg name="max_cluster" default="10000" />
+
+    <node pkg="imu_utils" type="imu_an" name="imu_an" output="screen">
+        <param name="imu_topic" value= "$(arg imu_topic)"/>
+        <param name="imu_name" value= "$(arg imu_name)"/>
+        <param name="data_save_path" value= "$(arg data_save_path)"/>
+        <param name="max_time_min" value= "$(arg max_time_min)"/>
+        <param name="max_cluster" value= "$(arg max_cluster)"/>
+    </node>
+</launch>
